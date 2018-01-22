@@ -1,0 +1,131 @@
+/*
+====================================
+Projects Flexbox
+====================================
+*/
+@mixin project-text {
+  margin: 5px 0;
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  width: 100%;
+} 
+
+.projects-container {
+  background: #fff;
+  width: 100%;
+  visibility: hidden;
+  cursor: pointer;
+
+  justify-content: center;
+
+  .project {
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+    padding: 1px;
+    
+    @media #{$medium-device} {
+      min-width: 50%;
+      height: auto;
+      
+    }
+    
+    @media #{$small-device} {
+      min-width: 50%;
+      height: auto;
+    }
+    
+    @media #{$smaller-device} {
+      min-width: 100%;
+      height: auto;
+
+      img {
+        min-width: 100%;
+      }
+
+    }
+    
+    &:hover {
+      background-color: $nav-bg-fixed;
+      opacity: 0.5;
+    }
+    
+    & img {
+      max-width: 100%;
+      height: auto;
+      overflow: hidden;
+      display: block;
+      
+      transition: transform 0.2s linear;
+    }
+    
+    &:hover img {
+      transform: scale(1.2);
+    } 
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      color: $white;
+
+      transition: background-color 0.15s linear;
+      
+      .title,
+      .text {
+        position: relative;
+        height: 50%;
+        width: 100%;
+        
+        transition: opacity 0.15s linear;
+        opacity: 0;
+      }
+      .title h5 {
+        @include project-text;
+        
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 500; 
+        
+        top: 30%;
+
+        transition: top 0.175s linear, 
+      }
+      .text p {
+        @include project-text;
+
+        bottom: 30%;
+
+        transition: bottom 0.175s linear;
+      }
+
+      &:hover .title,
+      &:hover .text {
+        opacity: 1;
+
+        & h5 {
+          top: 75%;
+        }
+
+        & p {
+          bottom: 75%;
+        }
+      }
+    
+    }
+    
+    .overlay:hover {
+      background-color: $project-overlay;
+    }
+
+  }
+  
+}
+
+.animated {
+  visibility: visible;
+}

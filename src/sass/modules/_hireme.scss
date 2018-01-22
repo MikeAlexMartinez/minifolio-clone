@@ -1,0 +1,20 @@
+/*
+=======================================
+Hire me section
+=======================================
+*/
+
+.hireme {
+  height: $section-height-smaller;
+  width: 100%;
+  padding: $section-padding-smaller 0;
+  background: $off-white; 
+
+  h4 {
+    margin-bottom: 0;
+  }
+
+  p {
+    margin: 15px 0;
+  }
+}

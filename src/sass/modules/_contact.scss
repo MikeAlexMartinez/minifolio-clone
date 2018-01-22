@@ -1,0 +1,52 @@
+.contact {
+  font-size: 22px;
+  line-height: $default-line-height;
+
+  padding: 50px 300px;
+}
+
+.contact-form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $off-white;
+  
+  .entry {
+    font-size: 18px;
+    
+    display: block;
+    margin-left: 30%;
+    margin-bottom: 50px;
+    width: 40%;
+
+    padding: 18px;
+    border-radius: 3px;
+    
+    border: solid 1px $faded-white;
+
+    background-color: $white;
+    
+  }
+  
+  textarea {
+    min-height: 330px;
+  }
+  
+}
+
+@media all and (max-width: 1200px) {
+  .contact {
+    padding: 50px 150px;
+  }
+  
+  .contact-form .entry {
+    display: block;
+    margin-left: 12.5%;
+    width: 75%;
+  }  
+}
+
+@media all and (max-width: 768px) {
+  .contact {
+    padding: 0 50px 50px 50px;
+  }
+}

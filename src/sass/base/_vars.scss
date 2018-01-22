@@ -1,0 +1,56 @@
+/* breakpoints */
+$smaller-device: 'all and (max-width: 767px)';
+$small-device: 'all and (min-width: 768px) and (max-width: 1024px)';
+$medium-device: 'all and (min-width: 1025px) and (max-width: 1199px)';
+$wide-device: 'all and (min-width: 1200px)';
+
+$success: #99f7c2;
+$success-border: #47ff56;
+$success-text: #00ce11;
+$error: #ff7272;
+$error-border: #ff3838;
+$error-text: #f20000;
+
+$purple: #65349c;
+$purple-overlay: rgba(64, 35, 97, 0.8);
+$purple-menu: rgba(64, 35, 97, 1);
+$white: #fff;
+$bg-grey: rgba(49, 49, 49, 0.50);
+$off-white: #fafafa;
+$faded-white: #dfdfdf;
+$light-grey: #9a9a9a;
+$grey: #3d3d3d;
+$green: #3bc492;
+
+$nav-height: 140px;
+$nav-height-padding: 60px;
+$nav-height-fixed: 80px;
+$nav-height-padding-fixed: 30px;
+
+$section-height-large: 750px;
+$section-height-medium: 500px;
+$section-height-small: 400px;
+$section-height-smaller: 350px;
+
+$section-padding-smaller: 65px;
+
+$header-font-size: 80px;
+$medium-header-font-size: 50px;
+$small-header-font-size: 36px;
+
+$about-name-font-size: 28px;
+
+$default-line-height: 36px;
+
+$header-bg-color: $purple;
+$nav-bg-fixed: $bg-grey;
+$content-bg-color: $white;
+$footer-bg-color: $white;
+$hireme-bg-color: $off-white;
+$btn-bg-color: $green;
+$btn-bg-color--hover: $grey;
+$icon-bg-grey: $grey;
+$project-overlay: $purple-overlay;
+
+$header-text-color: $white;
+$content-text-color: $grey;

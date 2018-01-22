@@ -1,0 +1,100 @@
+
+/* clearfix - source: https://css-tricks.com/snippets/css/clear-fix/ */
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+} 
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/* Typography */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto%20Slab:300,400,500,600,700);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: $content-text-color;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 28px;
+}
+
+.content {
+  margin-top: $section-height-large;
+
+  &.small {
+    margin-top: $section-height-small;
+  }
+
+  @media all and (max-width: 767px) {
+    
+    margin-top: $section-height-small;
+    
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: $btn-bg-color;
+  padding: 1.5em 3em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $header-text-color;
+  border: none;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 5px;
+
+  transition: background-color 0.15s linear;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: $btn-bg-color--hover;
+  }
+}
+
+.container {
+  width: 100%;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  padding-left: 25%;
+  padding-right: 25%;
+
+  line-height: $default-line-height;
+  font-size: 22px;
+
+  @media all and (max-width: 1200px) {
+    padding: 50px 200px;
+  }
+
+  @media all and (max-width: 1025px) {
+    padding: 30px 150px;
+    line-height: 28px;
+    font-size: 18px;
+  }
+
+  @media all and (max-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
