@@ -1,6 +1,6 @@
 'use strict';
 
-const appData = require('../scripts/appData');
+const appData = require('../scripts/minifolio-clone-data');
 
 const views = 'my-projects/minifolio-clone/';
 
