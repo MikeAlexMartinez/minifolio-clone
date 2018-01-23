@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const appRoutes = require('./appRoutes');
+const appRoutes = require('./minifolio-clone');
 
 // api routes
 router.use('/api', require('./api'));
