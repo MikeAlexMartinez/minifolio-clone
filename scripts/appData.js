@@ -2,49 +2,49 @@ module.exports.projects = [
   {
     title: "Project Title",
     detail: "This is the project detail",
-    image: "images/work-1.jpg",
+    image: "/my-projects/minifolio-clone/images/work-1.jpg",
     section: "top"
   },
   {
     title: "Project Title",
     detail: "This is the project detail",
-    image: "images/work-2.jpg",
+    image: "/my-projects/minifolio-clone/images/work-2.jpg",
     section: "top"
   },
   {
     title: "Project Title",
     detail: "This is the project detail",
-    image: "images/work-3.jpg",
+    image: "/my-projects/minifolio-clone/images/work-3.jpg",
     section: "top"
   },
   {
     title: "Project Title",
     detail: "This is the project detail",
-    image: "images/work-4.jpg",
+    image: "/my-projects/minifolio-clone/images/work-4.jpg",
     section: "top"
   },
   {
     title: "Project Title",
     detail: "This is the project detail",
-    image: "images/work-5.jpg",
+    image: "/my-projects/minifolio-clone/images/work-5.jpg",
     section: "bottom"
   },
   {
     title: "Project Title",
     detail: "This is the project detail",
-    image: "images/work-6.jpg",
+    image: "/my-projects/minifolio-clone/images/work-6.jpg",
     section: "bottom"
   },
   {
     title: "Project Title",
     detail: "This is the project detail",
-    image: "images/work-7.jpg",
+    image: "/my-projects/minifolio-clone/images/work-7.jpg",
     section: "bottom"
   },
   {
     title: "Project Title",
     detail: "This is the project detail",
-    image: "images/work-8.jpg",
+    image: "/my-projects/minifolio-clone/images/work-8.jpg",
     section: "bottom"
   },
 ];

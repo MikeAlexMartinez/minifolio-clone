@@ -1,27 +1,15 @@
-const express = require('express')
-    , router = express.Router();
+const express = require('express');
+const router = express.Router();
 
-const appData = require('../scripts/appData');
+const appRoutes = require('./appRoutes');
 
 // api routes
 router.use('/api', require('./api'));
 
-// general routes
-router.get('/contact', function contactPage(req, res) {
-  res.render('contact', { title: "Minifolio - Contact", socialItems: appData.socialItems, status: "null"});
-});
+appRoutes.forEach(({ method, route, fn}) => {
+  
+  router[method](route, fn);
 
-router.get('/about', function contactPage(req, res) {
-  res.render('about', { title: "Minifolio - About", socialItems: appData.socialItems});
-});
-
-router.get('/', function homePage(req, res) {
-  console.log('home request received');
-
-  const top = appData.projects.filter((v) => v.section === 'top');
-  const bottom = appData.projects.filter((v) => v.section === 'bottom'); 
-
-  res.render('home', { projectsTop: top, projectsBottom: bottom, socialItems: appData.socialItems, title: "Minifolio - Home"});
 });
 
 // fallback route
